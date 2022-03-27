@@ -1,0 +1,59 @@
+{
+  "name": "@fellwork/prettier-config",
+  "version": "0.0.0",
+  "type": "commonjs",
+  "description": "Shared prettier config",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup",
+    "lint": "eslint --ext .ts,.js,.mjs,.cjs .",
+    "prepack": "tsup",
+    "release": "standard-version && git push --follow-tags && pnpm publish",
+    "test": "pnpm lint && vitest run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fellwork/prettier-config.git"
+  },
+  "keywords": [
+    "prettier",
+    "config"
+  ],
+  "author": "Shane McGuirt<shane@fellwork.com>",
+  "license": "MIT",
+  "dependencies": {
+    "prettier-plugin-jsdoc": "^0.3.30",
+    "prettier-plugin-organize-imports": "^2.3.4",
+    "prettier-plugin-package-perfection": "^1.0.1"
+  },
+  "devDependencies": {
+    "@rushstack/eslint-config": "latest",
+    "@types/prettier": "latest",
+    "eslint": "latest",
+    "prettier": "latest",
+    "standard-version": "latest",
+    "tsup": "latest",
+    "typescript": "latest",
+    "vitest": "latest"
+  },
+  "peerDependencies": {
+    "prettier": "*"
+  },
+  "tsup": {
+    "clean": true,
+    "config": false,
+    "dts": true,
+    "entry": [
+      "src/index.ts"
+    ],
+    "external": [
+      "prettier"
+    ],
+    "format": "cjs",
+    "sourcemap": false,
+    "splitting": false,
+    "tsconfig": "./tsconfig.build.json"
+  },
+  "packageManager": "pnpm@6.32.2"
+}
