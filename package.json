@@ -53,7 +53,7 @@
     "external": [
       "prettier"
     ],
-    "format": "cjs",
+    "format": ["cjs"],
     "sourcemap": false,
     "splitting": false,
     "tsconfig": "./tsconfig.build.json"
