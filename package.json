@@ -40,6 +40,9 @@
   "peerDependencies": {
     "prettier": "*"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "tsup": {
     "clean": true,
     "config": false,
