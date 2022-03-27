@@ -1,6 +1,6 @@
 {
   "name": "@fellwork/prettier-config",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "commonjs",
   "description": "Shared prettier config",
   "main": "./dist/index.js",
@@ -53,7 +53,9 @@
     "external": [
       "prettier"
     ],
-    "format": ["cjs"],
+    "format": [
+      "cjs"
+    ],
     "sourcemap": false,
     "splitting": false,
     "tsconfig": "./tsconfig.build.json"
