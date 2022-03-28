@@ -1,6 +1,6 @@
 {
   "name": "@fellwork/prettier-config",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "commonjs",
   "description": "Shared prettier config",
   "main": "./dist/index.js",
