@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "build": "tsup",
-    "lint": "eslint --ext .ts,.js,.mjs,.cjs .",
+    "lint": "eslint --ext .ts,.js,.mjs,.cjs . --fix",
     "prepack": "tsup",
     "release": "standard-version && git push --follow-tags && pnpm publish",
     "test": "pnpm lint && vitest run"
@@ -34,6 +34,8 @@
     "@rushstack/eslint-config": "latest",
     "@types/prettier": "latest",
     "eslint": "latest",
+    "eslint-config-prettier": "latest",
+    "eslint-plugin-prettier": "latest",
     "prettier": "latest",
     "standard-version": "latest",
     "tsup": "latest",
@@ -63,5 +65,5 @@
     "splitting": false,
     "tsconfig": "./tsconfig.build.json"
   },
-  "packageManager": "pnpm@6.32.2"
+  "packageManager": "pnpm@6.32.3"
 }
